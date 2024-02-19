@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-l3mp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0029-tenant/tkrw-pr712-0075-0029-app/devfile-sample-l3mp@sha256:921dca319591d440d593dceea4c3c624db2f59f13daae0c2d50b1c0eed006766
+        name: my-nodejs
+        resources: {}
+status: {}
